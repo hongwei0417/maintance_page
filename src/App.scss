@@ -1,0 +1,43 @@
+.app {
+    font-family: "微軟正黑體", Arial, Helvetica, sans-serif;
+
+    .app-body {
+        background-color: #252b4a;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        // font-size: calc(10px + 2vmin);
+        color: #ffffff;
+    }
+
+    .app-title {
+        font-size: 60px;
+        margin-bottom: 20px;
+    }
+
+    .app-subtitle {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .app-button {
+        width: 228px;
+        height: 56px;
+        font-size: 25px;
+        font-weight: bold;
+        background-color: #c2c1d7;
+        color: #252b4a;
+        outline: none;
+        border: 0;
+    }
+}
+
+div {}
+
+.logo {
+    position: absolute;
+    top: 35px;
+    left: 35px;
+}

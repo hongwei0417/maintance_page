@@ -1,26 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Button } from "react-bootstrap";
+import { useMediaQuery } from "react-responsive";
+import "./App.scss";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const close = () => {
+		window.open("about:blank", "_self");
+		window.close();
+	};
+
+	return (
+		<div className="app">
+			<div className="app-body">
+				<div className="logo">
+					<img src="./img/img_logo.svg" alt="FCS" height="30px" />
+				</div>
+				<div className="mb-5">
+					<img src="./img/pic.png" alt="維護中" />
+				</div>
+				<div className="app-title">系統維護中</div>
+				<div className="app-subtitle">
+					我們需要暫時將網站關閉整修，造成您的不便，敬請見諒!
+				</div>
+				<Button className="app-button" onClick={close}>
+					關閉此頁
+				</Button>
+			</div>
+		</div>
+	);
 }
 
 export default App;
